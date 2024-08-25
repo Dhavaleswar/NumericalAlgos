@@ -1,4 +1,4 @@
-from Algos.GaussianElemination import GaussianElimination
+from Algos.LinearSystems.GaussianElemination import GaussianElimination
 from unittest import TestCase
 import numpy as np
 

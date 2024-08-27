@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "numericalalgos"
+name = "dhavalgos"
 version = "0.1.0"
 description = ""
 authors = ["Dhavaleswar <93dhavaleshwar@gmail.com>"]
@@ -15,6 +15,7 @@ sympy = "^1.12"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
+sphinx = "7.0"
 
 [build-system]
 requires = ["poetry-core"]

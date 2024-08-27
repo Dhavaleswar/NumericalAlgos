@@ -1,7 +1,30 @@
 import numpy as np
 
+#improve below code and add document comments
+
 
 class GaussianElimination:
+    """
+    Gaussian Elimination is a method to solve linear systems of equations.
+    The algorithm works by transforming the system's augmented matrix into a triangular matrix.
+    The algorithm is divided into two steps:
+    1. Forward elimination: The algorithm transforms the matrix into an upper triangular matrix.
+    2. Backward substitution: The algorithm solves the system of equations by back-substituting the values of the variables.
+
+    The algorithm is not stable for all matrices. It may fail if the matrix is singular or ill-conditioned.
+    Attributes:
+    M: np.ndarray
+        The augmented matrix of the system of equations.
+    x: np.ndarray
+        The solution to the system of equations.
+
+    :arg
+    A: np.ndarray
+        The coefficient matrix of the system of equations.
+    b: np.ndarray
+        The right-hand side of the system of equations.
+    """
+
     def __init__(self, A: np.ndarray, b: np.ndarray):
         self.M = A.copy()
         self.x = b.copy()

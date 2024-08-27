@@ -6,12 +6,8 @@ import numpy as np
 def solve(A, b):
     gaussian_ = GaussianElimination(A, b)
     gaussian_.solve()
-
     b1 = A @ gaussian_.x
     check = np.allclose(b, b1, rtol=1e-5)
-
-    print(gaussian_.x)
-    print(b1)
     return check
 
 
